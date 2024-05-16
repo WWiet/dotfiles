@@ -1,0 +1,8 @@
+[submodule "tmux-continuum"]
+    path = .config/tmux/plugins/tmux-continuum
+    url = git://github.com/tmux-plugins/tmux-continuum
+    ignore = dirty
+[submodule "tmux-resurrect"]
+    path = .config/tmux/plugins/tmux-resurrect
+    url = git://github.com/tmux-plugins/tmux-resurrect
+    ignore = dirty
