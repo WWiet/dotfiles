@@ -4,7 +4,7 @@
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 vim.keymap.set("n", "<leader>qn", "<cmd>qa<cr>", { desc = "Quit Now" })
-vim.keymap.set("n", "<leader>pv", "<cmd>Explore<cr>", { desc = "Open Netrw" })
+vim.keymap.set("n", "<leader>pv", "<cmd>Oil<cr>", { desc = "Open Oil" })
 
 vim.keymap.set("n", "J", "mzJ`z")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
