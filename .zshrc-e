@@ -123,19 +123,3 @@ export PATH=$PATH:~/go/bin
 # enable zoxide
 eval "$(zoxide init --cmd cd zsh)"
 
-
-[ -f "/Users/wdw002/.ghcup/env" ] && . "/Users/wdw002/.ghcup/env" # ghcup-env
-# haskell
-export PATH="$HOME/.ghcup/bin:$PATH"
-
-
-
-# BEGIN opam configuration
-# This is useful if you're using opam as it adds:
-#   - the correct directories to the PATH
-#   - auto-completion for the opam binary
-# This section can be safely removed at any time if needed.
-[[ ! -r '/Users/wdw002/.opam/opam-init/init.zsh' ]] || source '/Users/wdw002/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
-# END opam configuration
-export MODULAR_HOME="/Users/wdw002/.modular"
-export PATH="/Users/wdw002/.modular/pkg/packages.modular.com_mojo/bin:$PATH"

@@ -1,11 +1,11 @@
 # Open app shortcuts
-shift + alt - i : open -a /Applications/Alacritty.app
-shift + alt - f : open -a /Applications/Firefox\ Developer\ Edition.app/
-shift + alt - s : open -a /Applications/Slack.app
-shift + alt - o : open -a /Applications/Microsoft\ Outlook.app/
-shift + alt - c : open -a /Applications/Visual\ Studio\ Code.app/
-shift + alt - n : open -a /Applications/Notion.app
-shift + alt - z : open -a /Applications/Zed.app
+# shift + alt - i : open -a /Applications/Alacritty.app
+# shift + alt - f : open -a /Applications/Firefox\ Developer\ Edition.app/
+# shift + alt - s : open -a /Applications/Slack.app
+# shift + alt - o : open -a /Applications/Microsoft\ Outlook.app/
+# shift + alt - c : open -a /Applications/Visual\ Studio\ Code.app/
+# shift + alt - n : open -a /Applications/Notion.app
+# shift + alt - z : open -a /Applications/Zed.app
 # -- Changing Window Focus --
 
 # change window focus within space
