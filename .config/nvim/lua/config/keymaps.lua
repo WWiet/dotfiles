@@ -20,4 +20,6 @@ vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 
 vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
-vim.keymap.set({ "n", "v" }, "<leader>w", ":update<CR><esc>", { silent = true, desc = "Update File" })
+
+vim.keymap.set({ "n" }, "<leader>Z", ":ZenMode<CR>", { desc = "Toggle Zen Mode" })
+vim.keymap.set({ "n" }, "<leader>z", ":lua ToggleLineNumbers()<CR>", { desc = "Toggle Line Numbers" })

@@ -9,10 +9,11 @@ return {
   { "rose-pine/neovim", name = "rose-pine" },
   { "olimorris/onedarkpro.nvim" },
   { "rebelot/kanagawa.nvim" },
+  { "arzg/vim-colors-xcode" },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "kanagawa-wave",
+      colorscheme = "xcode",
     },
   },
 }
