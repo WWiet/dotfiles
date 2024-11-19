@@ -3,7 +3,7 @@
 if [[ $# -eq 1 ]]; then
     selected=$1
 else
-    selected=$(find ~/.config ~/Documents/aws-repos ~/Documents/aws-repos/shared-services ~/Documents/aws-repos/master ~/ -mindepth 1 -maxdepth 1 -type d | fzf)
+    selected=$(find ~/.config ~/Documents/aws-repos ~/Documents/aws-repos/shared-services ~/Documents ~/Documents/aws-repos/master ~/ -mindepth 1 -maxdepth 1 -type d | fzf)
 fi
 
 if [[ -z $selected ]]; then
