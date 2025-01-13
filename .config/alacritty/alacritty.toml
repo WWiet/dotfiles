@@ -1,3 +1,6 @@
+[terminal.shell]
+program = "/bin/zsh"
+args = ["--login"]
 
 [env]
 term = "xterm-256color"
@@ -13,7 +16,7 @@ opacity = 0.9
 
 [font]
 normal.family = "FiraCode Nerd Font Propo"
-size = 21
+size = 22
 
 [general]
 import = ["~/.config/alacritty/xcode.toml"]

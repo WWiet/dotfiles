@@ -8,6 +8,7 @@ vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
+vim.opt.numberwidth = 1
 
 vim.opt.smartindent = true
 
@@ -30,3 +31,14 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80"
+
+--- Disable hiding of markup
+vim.opt.conceallevel = 0
+
+--- Break lines at word boundaries
+vim.opt.wrap = true
+vim.opt.linebreak = true
+
+--- Copy the indent of the current line when inserting a new line
+vim.opt.autoindent = true
+vim.opt.cursorline = true

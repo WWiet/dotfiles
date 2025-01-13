@@ -3,6 +3,8 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+# Export PATH
+export PATH="/opt/homebrew/bin:$PATH"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -100,7 +102,7 @@ source ~/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
 alias zshconfig="nvim ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias vim='nvim'
-alias vi='nvim'
+#alias vi='nvim'
 alias v='nvim'
 alias se='source .venv/bin/activate'
 alias lg='lazygit'
@@ -127,6 +129,8 @@ eval "$(zoxide init --cmd cd zsh)"
 [ -f "/Users/wdw002/.ghcup/env" ] && . "/Users/wdw002/.ghcup/env" # ghcup-env
 # haskell
 export PATH="$HOME/.ghcup/bin:$PATH"
+# alias to love
+alias love="/Applications/love.app/Contents/MacOS/love"
 
 
 
@@ -139,3 +143,7 @@ export PATH="$HOME/.ghcup/bin:$PATH"
 # END opam configuration
 export MODULAR_HOME="/Users/wdw002/.modular"
 export PATH="/Users/wdw002/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
+#brew Path
+# Set PATH for Homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
