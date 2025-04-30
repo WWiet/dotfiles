@@ -132,6 +132,12 @@ export PATH="$HOME/.ghcup/bin:$PATH"
 # alias to love
 alias love="/Applications/love.app/Contents/MacOS/love"
 
+autoload -U add-zsh-hook
+# whenever you land at your prompt, reset to an underline cursor
+zsh_cursor_reset() {
+  print -Pn "\e[4 q"
+}
+add-zsh-hook -Uz precmd zsh_cursor_reset
 
 
 # BEGIN opam configuration
