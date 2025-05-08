@@ -7,3 +7,9 @@
 --     vim.cmd("redraw")
 --   end,
 -- })
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "markdown", "txt" },
+  callback = function()
+    vim.cmd("set nospell")
+  end,
+})
