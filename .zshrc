@@ -4,7 +4,8 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 # Export PATH
-export PATH="/opt/homebrew/bin:$PATH"
+# export PATH="/opt/homebrew/bin:$PATH"
+export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -75,7 +76,6 @@ ZSH_THEME="robbyrussell"
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search)
 
 source $ZSH/oh-my-zsh.sh
-source ~/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -116,9 +116,9 @@ alias lg='lazygit'
 [ -s "/Users/wdw002/.bun/_bun" ] && source "/Users/wdw002/.bun/_bun"
 
 # bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-export PATH="/opt/homebrew/lib/python3.11/site-packages:$PATH"
+# export BUN_INSTALL="$HOME/.bun"
+# export PATH="$BUN_INSTALL/bin:$PATH"
+# export PATH="/opt/homebrew/lib/python3.11/site-packages:$PATH"
 
 # golang
 export PATH=$PATH:~/go/bin
@@ -126,11 +126,9 @@ export PATH=$PATH:~/go/bin
 eval "$(zoxide init --cmd cd zsh)"
 
 
-[ -f "/Users/wdw002/.ghcup/env" ] && . "/Users/wdw002/.ghcup/env" # ghcup-env
+# [ -f "/Users/wdw002/.ghcup/env" ] && . "/Users/wdw002/.ghcup/env" # ghcup-env
 # haskell
 export PATH="$HOME/.ghcup/bin:$PATH"
-# alias to love
-alias love="/Applications/love.app/Contents/MacOS/love"
 
 autoload -U add-zsh-hook
 # whenever you land at your prompt, reset to an underline cursor
@@ -151,5 +149,5 @@ export MODULAR_HOME="/Users/wdw002/.modular"
 export PATH="/Users/wdw002/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
 #brew Path
 # Set PATH for Homebrew
-eval "$(/opt/homebrew/bin/brew shellenv)"
+# eval "$(/opt/homebrew/bin/brew shellenv)"
 
