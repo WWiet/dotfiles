@@ -45,6 +45,18 @@ fi
 echo
 echo "=== Setting up tmux ==="
 
+# Backup existing tmux config
+if [ -d "$TMUX_CONF" ]; then
+    echo "Backing up existing tmux config to ${TMUX_CONF}.bak"
+    mv "$TMUX_CONF" "${TMUX_CONF}.bak"
+fi
+
+# Copy new tmux config
+mkdir "$TMUX_CONF"
+echo "Copying new Tmux config from $DOTFILES_DIR/tmux..."
+cp "$DOTFILES_DIR/tmux/tmux.conf" "$TMUX_CONF"
+cp "$DOTFILES_DIR/tmux/tmux.reset.conf" "$TMUX_CONF"
+
 # Ensure tmux plugins folder exists
 mkdir -p "$TMUX_CONF/plugins"
 
