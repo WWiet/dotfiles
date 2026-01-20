@@ -8,6 +8,11 @@ chmod +x install.sh
 
 ## Tmux
 Installing tmux is probably the most difficult. Here are the steps.
+Just in case you want to back up your current config before making changes
+```bash
+mv ~/.config/tmux ~/.config/tmux.bak
+cp ~/dotfiles/tmux ~/.config/
+```
 1. Make sure to copy the TPM (tmux package manager) from the repo into the tmux folder here ~/.config/tmux/plugins
 ```bash
 git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
