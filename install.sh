@@ -8,6 +8,7 @@ echo "=== Starting setup script ==="
 DOTFILES_DIR=~/dotfiles
 TMUX_CONF=~/.config/tmux
 TMUX_SESSIONIZER=~/.local/scripts/tmux-sessionizer.sh
+POMODORO_TIMER=~/.local/scripts/pomodoro-status.sh
 NEOVIM_CONF=~/.config/nvim
 
 # Function to check command existence
@@ -80,6 +81,24 @@ echo "Copying tmux-sessionizer.sh to $TMUX_SESSIONIZER..."
 cp "$DOTFILES_DIR/tmux/tmux-sessionizer.sh" "$TMUX_SESSIONIZER"
 chmod +x "$TMUX_SESSIONIZER"
 echo "Done."
+
+# Copy pomodoro-timer.sh
+mkdir -p "$(dirname "$POMODORO_TIMER")"
+echo
+echo "Copying pomodoro-status.sh to $POMODORO_TIMER..."
+cp "$DOTFILES_DIR/tmux/pomodoro-status.sh" "$POMODORO_TIMER"
+chmod +x "$POMODORO_TIMER"
+echo "Done."
+
+# Build and add my own session picker
+echo
+echo "Cloning My Session Picker to ~/projects/..."
+git clone https://github.com/WWiet/tmux-session-picker.git ~/projects/
+echo "Building Session Picker (Golang must be installed)..."
+cd ~/projects/tmux-session-picker/
+go build -o ~/.local/bin/session-picker .
+echo "Done."
+
 
 echo
 echo "=== Setting up Neovim ==="
